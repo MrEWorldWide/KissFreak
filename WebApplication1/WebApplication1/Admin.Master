@@ -1,0 +1,25 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" Codefile="Admin.Master.vb" Inherits="AdminMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder ID="Body" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+        <asp:ContentPlaceHolder ID="Foot" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+</body>
+    
+</html>

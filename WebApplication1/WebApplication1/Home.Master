@@ -1,0 +1,69 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeFile="Home.Master.vb" Inherits="HomeMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>The Kiss Freak</title>
+    <asp:ContentPlaceHolder ID="Head" runat="server">
+
+    </asp:ContentPlaceHolder>
+</head>
+   
+<body style="background-color:black">
+    <style>
+        a, a:hover, a:active, a:visited { color: white; text-decoration: none; }
+    </style>
+    <form id="form1" runat="server">
+    <div style="color:white">
+
+    <asp:ContentPlaceHolder ID="BodyHead" runat="server">
+        
+    </asp:ContentPlaceHolder>
+
+        <asp:Table runat="server" Width="100%" >
+
+            <asp:TableRow>
+                <asp:TableCell  VerticalAlign="Top">
+                    <asp:ContentPlaceHolder ID="BodyMenu" runat="server">
+        
+                    </asp:ContentPlaceHolder>
+                </asp:TableCell>
+
+                <asp:TableCell Width="100%" VerticalAlign="Bottom">
+                    <asp:ContentPlaceHolder ID="PageTitle" runat="server">
+        
+                    </asp:ContentPlaceHolder>
+                </asp:TableCell>
+            </asp:TableRow>
+
+
+
+            <asp:TableRow>
+                <asp:TableCell Width="300" VerticalAlign="Top" HorizontalAlign="Left">
+                    <asp:ContentPlaceHolder ID="MenuLinks" runat="server">
+        
+                    </asp:ContentPlaceHolder>
+                </asp:TableCell>
+            
+                                <asp:TableCell Width="300" VerticalAlign="Top" HorizontalAlign="Left">
+                    <asp:ContentPlaceHolder ID="PageContent" runat="server">
+        
+                    </asp:ContentPlaceHolder>
+                </asp:TableCell>
+            </asp:TableRow>
+
+        </asp:Table>
+
+    </div>
+    </form>
+   <br />
+   <br />
+   <br />
+
+    <asp:ContentPlaceHolder ID="Foot" runat="server">
+
+    </asp:ContentPlaceHolder>
+</body>
+    
+</html>
